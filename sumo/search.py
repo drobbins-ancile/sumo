@@ -18,7 +18,7 @@ class Search:
 
     def build_session(self):
 
-        session - requests.Session()
+        session = requests.Session()
 
         creds = f"{self.access_id}:{self.access_key}"
         encodedBytes = b64encode(creds.encode("utf-8"))
